@@ -7,17 +7,13 @@ import (
 	"strings"
 )
 
-const (
-	filename = "data.csv"
-)
-
-func parse() ([]int, error) {
+func parse(filePath string) error {
 	result := make([]int, 0)
 
-	data, err := ioutil.ReadFile(filename)
+	data, err := ioutil.ReadFile(filePath)
 	if nil != err {
-		fmt.Printf("read file %s with error: %s\n", filename, err)
-		return result, err
+		fmt.Printf("read file %s with error: %s\n", filePath, err)
+		return err
 	}
 
 	lines := strings.Split(string(data), "\n")
@@ -40,5 +36,10 @@ func parse() ([]int, error) {
 		}
 	}
 
-	return result, nil
+	for _, n := range result {
+		fmt.Printf("%d, ", n)
+	}
+	fmt.Println()
+
+	return nil
 }
