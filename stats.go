@@ -1,8 +1,12 @@
-# reference form https://leetcode.com/discuss/general-discussion/522705/1000-LeetCode-Problems-within-a-Year
-# data: 2020/3/8
-#,,45.00%,38.20%,30.80%,,,,30.80%,
-#,Title,Acc.,Diff.,Norm. Acc.,Avg. Acc.,Rel. Acc.,Points,Score,Premium
-771,Jewels and Stones,84.60%,Easy,73.29%,45.10%,-51.35%,1,0.486,,
+package main
+
+// reference form https://leetcode.com/discuss/general-discussion/522705/1000-LeetCode-Problems-within-a-Year
+// data: 2020/3/8
+// ,,45.00%,38.20%,30.80%,,,,30.80%,
+// ,Title,Acc.,Diff.,Norm. Acc.,Avg. Acc.,Rel. Acc.,Points,Score,Premium
+
+const stats =
+`771,Jewels and Stones,84.60%,Easy,73.29%,45.10%,-51.35%,1,0.486,,
 1119,Remove Vowels from a String,88.90%,Easy,72.49%,45.10%,-49.89%,1,0.501,,1
 1350,Students With Invalid Departments,91.40%,Easy,71.60%,45.10%,-48.27%,1,0.517,Sql,1
 511,Game Play Analysis I,79.00%,Easy,71.51%,45.10%,-48.10%,1,0.519,Sql,1
@@ -1295,7 +1299,7 @@
 591,Tag Validator,33.80%,Hard,25.13%,30.80%,8.19%,3,3.246,,
 68,Text Justification,26.10%,Hard,25.10%,30.80%,8.23%,3,3.247,,
 956,Tallest Billboard,39.10%,Hard,25.08%,30.80%,8.27%,3,3.248,,
-432,All O`one Data Structure,31.40%,Hard,25.06%,30.80%,8.29%,3,3.249,,
+432,All O'one Data Structure,31.40%,Hard,25.06%,30.80%,8.29%,3,3.249,,
 854,K-Similar Strings,37.40%,Hard,24.87%,30.80%,8.56%,3,3.257,,
 188,Best Time to Buy and Sell Stock IV,27.50%,Hard,24.74%,30.80%,8.75%,3,3.263,,
 1088,Confusing Number II,40.70%,Hard,24.74%,30.80%,8.75%,3,3.263,,1
@@ -1369,4 +1373,4 @@
 564,Find the Closest Palindrome,19.30%,Hard,11.03%,30.80%,28.57%,3,3.857,,
 862,Shortest Subarray with Sum at Least K,23.20%,Hard,10.56%,30.80%,29.25%,3,3.878,,
 1044,Longest Duplicate Substring,25.30%,Hard,9.99%,30.80%,30.08%,3,3.902,,
-420,Strong Password Checker,15.50%,Hard,9.34%,30.80%,31.01%,3,3.930,,
+420,Strong Password Checker,15.50%,Hard,9.34%,30.80%,31.01%,3,3.930,,`
