@@ -12,7 +12,7 @@ type Problem struct {
 	Difficulty string
 }
 
-func parse() []Problem {
+func problems() []Problem {
 	result := make([]Problem, 0)
 
 	lines := strings.Split(stats, "\n")
@@ -41,4 +41,24 @@ func parse() []Problem {
 	}
 
 	return result
+}
+
+// next - get next problem index by difficulty
+func next(info []Problem, currentProblem *int, difficulty *Difficulty) (int, error) {
+	var i int
+	for i = range info {
+		if info[i].Number == *currentProblem {
+			i++
+			break
+		}
+	}
+
+	for i < len(info) {
+		if difficulty.Match(info[i].Difficulty) {
+			return i, nil
+		}
+		i++
+	}
+
+	return -1, fmt.Errorf("problem not found")
 }
